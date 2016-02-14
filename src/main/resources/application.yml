@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: @pom.organization.name@
+
+msg:
+  info: Hi %s ${random.int[5,10]}
