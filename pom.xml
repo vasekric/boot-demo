@@ -41,9 +41,15 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<!--
+			Since spring boot 1.3,
+			provides hot-swap of classes and resources,
+			provides live-reload, you need plugin for browser for that http://livereload.com/ and in Intellij click Make Project
+			docs - https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-hateoas</artifactId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -60,16 +66,7 @@
 				<packagingType>jar</packagingType>
 			</properties>
 			<dependencies>
-				<!--
-					Since spring boot 1.3,
-					provides hot-swap of classes and resources,
-					provides live-reload, you need plugin for browser for that http://livereload.com/ and in Intellij click Make Project
-					docs - https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html
-				-->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-devtools</artifactId>
-				</dependency>
+
 			</dependencies>
 			<build>
 				<plugins>
